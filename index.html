@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Tam giác ma thuật</title>
+        <style type="text/css">
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+        </style>
+        <style type="text/css">
+            .m3{
+               background-color: gray;
+            }
+            .m3 ul{
+                list-style: none;
+            }
+            .m3 li{
+                width:100px;
+                height:60px;
+            }
+            .m3>ul.m3-hozital{
+                
+            }
+            .m3>ul.m3-hozital>li{
+                display: inline-table;
+                position: relative;
+            }
+            .m3>ul.m3-hozital>li ul,
+            .m3>ul.m3-hozital>li li{
+                visibility: hidden;
+            }
+            .m3>ul.m3-hozital li:hover>ul,
+            .m3>ul.m3-hozital li:hover>ul>li,
+            .m3>ul.m3-hozital li.m3-visible>ul,
+            .m3>ul.m3-hozital li.m3-visible>ul>li
+            {
+                visibility: visible;
+                background-color: green;
+            }
+            .m3>ul.m3-hozital>li>ul{
+                position: absolute;
+                left:0;
+                top:100%;
+            }
+            .m3>ul.m3-hozital>li>ul ul{
+                position: absolute;
+                left:100%;
+                top:0;
+            }
+            .m3>ul.m3-hozital>li>ul ul li{
+                position: relative;
+                top:0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple Pure CSS Drop Down Menu</h1>
+        <nav class="m3">
+        <ul class="m3-hozital">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu 1</a>
+            <ul>
+            <li><a href="#">Sub Menu 4</a>
+                <ul>
+                <li><a href="#">Deep Menu 1</a>
+                    <ul>
+                        <li><a href="#">Sub Deep 1</a></li>
+                        <li><a href="#">Sub Deep 2</a></li>
+                        <li><a href="#">Sub Deep 3</a></li>
+                        <li><a href="#">Sub Deep 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Deep Menu 2</a></li>
+                <li><a href="#">Deep Menu 3</a></li>
+                <li><a href="#">Deep Menu 4</a></li>
+                <li><a href="#">Deep Menu 5</a></li>
+                <li><a href="#">Deep Menu 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sub Menu 5</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Menu 2</a>
+            <ul>
+            <li><a href="#">Sub Menu 1</a></li>
+            <li><a href="#">Sub Menu 2</a></li>
+            <li><a href="#">Sub Menu 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Menu 3 (m3)</a>
+            <ul>
+            <li><a href="#">Sub Menu 1</a>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                    <li><a href="#">Category 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sub Menu 2</a>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                    <li><a href="#">Category 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sub Menu 3</a>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                    <li><a href="#">Category 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sub Menu 4</a>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                    <li><a href="#">Category 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sub Menu 5</a>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                    <li><a href="#">Category 5</a></li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li><a href="#">Menu 4</a></li>
+        <li><a href="#">Menu 5</a></li>
+        <li><a href="#">Menu 6</a></li>
+        <li><a href="#">Contact Us</a></li>
+        </ul>
+        </nav>
+        <script type="text/javascript">
+        (function(){
+            var $containers = document.querySelectorAll('.m3');
+            Array.prototype.forEach.call($containers, buldM3);
+            function addEventLi(LI){
+                
+                var M3 = this,
+                    top = 0,
+                    left = 0,
+                    hight = 0;
+                var $ul = LI.querySelector('ul');
+                if ($ul) {
+                    var ulRec = $ul.getBoundingClientRect();
+                    top = ulRec.top;
+                    bottom = ulRec.bottom;
+                    left = ulRec.left;
+                    right = ulRec.right;
+
+                    hight = $ul.getBoundingClientRect.offsetHeight;    
+                }
+                
+                LI.onmouseover = function(e){
+                    if(M3.li && M3.li!=LI) M3.visibleLi(LI);
+                    if(!M3.triangle) M3.initTriangle(LI, e.screenX, e.screenY, top, bottom, left, right);
+                    else if(!M3.checkIntoTriangle(e.screenX, e.screenY)) M3.initTriangle(LI, e.screenX, e.screenY, top, bottom, left, right);              
+                };
+            }
+            function initTriangle(LI, mX, mY, top, bottom, left, right){
+                this.li = LI;
+                this.triangle = {
+                    a: {x: mX, y: mY},
+                    b: {x: left, y: top},
+                    c: {x: left, y: bottom}
+                };
+                console.log(this.triangle);
+            }
+            function checkIntoTriangle(mX, mY){
+                var px = mX, 
+                    py = mY,
+                    ax = this.triangle.a.x,
+                    ay = this.triangle.a.y,
+                    bx = this.triangle.b.x,
+                    by = this.triangle.b.y,
+                    cx = this.triangle.c.x,
+                    cy = this.triangle.c.y;
+                var v0 = [cx-ax,cy-ay];
+                var v1 = [bx-ax,by-ay];
+                var v2 = [px-ax,py-ay];
+
+                var dot00 = (v0[0]*v0[0]) + (v0[1]*v0[1]);
+                var dot01 = (v0[0]*v1[0]) + (v0[1]*v1[1]);
+                var dot02 = (v0[0]*v2[0]) + (v0[1]*v2[1]);
+                var dot11 = (v1[0]*v1[0]) + (v1[1]*v1[1]);
+                var dot12 = (v1[0]*v2[0]) + (v1[1]*v2[1]);
+
+                var invDenom = 1/ (dot00 * dot11 - dot01 * dot01);
+
+                var u = (dot11 * dot02 - dot01 * dot12) * invDenom;
+                var v = (dot00 * dot12 - dot01 * dot02) * invDenom;
+
+                return ((u >= 0) && (v >= 0) && (u + v < 1));
+            }
+            function visibleLi(LI){
+                var M3 = this;
+                var $lis = M3.querySelectorAll('li');
+                Array.prototype.forEach.call($lis, removeClass.bind(M3));
+                LI.className = "";
+                M3.li.className = "m3-visible";
+            }
+            function removeClass(LI){
+                LI.className = "";
+            }
+            function buldM3(M3){
+                var $lis = M3.querySelectorAll('li');
+                M3.li = null;
+                M3.triangle = null;
+                M3.initTriangle = initTriangle.bind(M3);
+                M3.visibleLi = visibleLi.bind(M3);
+                M3.checkIntoTriangle = checkIntoTriangle.bind(M3);
+                Array.prototype.forEach.call($lis, addEventLi.bind(M3));
+                
+            }
+        })();
+        </script>
+    </body>
+</html>
